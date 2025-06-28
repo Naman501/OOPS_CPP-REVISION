@@ -1,8 +1,13 @@
 #include<iostream>
 using namespace std;
 
-void f(){
-    cout<<1<<endl;
+int count =0;
+int f(){
+    if(count == 6){
+        return ;
+    }
+    cout<<count<<endl;
+    count++;
     f();
 }
 
